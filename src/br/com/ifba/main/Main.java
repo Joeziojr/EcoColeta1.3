@@ -15,7 +15,7 @@ public class Main extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/br/com/ifba/view/RegisterView.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/br/com/ifba/view/LoginView.fxml"));
         Parent root = loader.load();
         Scene scene = new Scene(root);
 

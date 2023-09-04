@@ -16,12 +16,16 @@ import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import javafx.stage.Stage;
 import javax.swing.JOptionPane;
 /**
  * FXML Controller class
@@ -39,6 +43,10 @@ public class LoginViewController{
     private PasswordField loginPasswordTxt;
     @FXML
     private Button loginBtn;
+    @FXML
+    private Button loginRegisterBtn;
+    
+    
     /**
      * Initializes the controller class.
      */
@@ -46,7 +54,24 @@ public class LoginViewController{
      
      public void onLoginBtnAction() throws IOException {
          fazerLogin();
-    }
+     }
+     
+     public void onLoginRegisterBtnAction() throws IOException {
+        Stage stage = new Stage();
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/br/com/ifba/view/RegisterView.fxml"));
+        Parent root = loader.load();
+        Scene scene = new Scene(root);
+
+        String css = this.getClass().getResource("/br/com/ifba/styleSheets/style.css").toExternalForm();
+        scene.getStylesheets().add(css);
+        
+        stage.setScene(scene);
+        stage.setTitle("Registro");
+        stage.centerOnScreen();
+        stage.show();
+     }
+     
+    
 
     //Método que  verifica a existência de uma conta, verificando o email
     public void fazerLogin() throws IOException {
@@ -56,6 +81,21 @@ public class LoginViewController{
             if (us.getId() > 0) {
                 JOptionPane.showMessageDialog(null, "Fez o login");
                // return true;
+               
+               Stage stage = new Stage();
+                FXMLLoader loader = new FXMLLoader(getClass().getResource("/br/com/ifba/view/MainView.fxml"));
+                Parent root = loader.load();
+                Scene scene = new Scene(root);
+
+                String css = this.getClass().getResource("/br/com/ifba/styleSheets/style.css").toExternalForm();
+                scene.getStylesheets().add(css);
+
+                stage.setScene(scene);
+                stage.setTitle("Main");
+                stage.centerOnScreen();
+                stage.show();
+               
+               
             }
             if (us.getId() == 0) {
                 JOptionPane.showMessageDialog(null, "User não cadastrado");

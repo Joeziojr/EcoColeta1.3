@@ -12,5 +12,12 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to ed
 #loginBtn{
     -fx-background-color: #4f9556
 }
+#loginRegisterBtn{
+    -fx-background-color: #4f9556
+}
+
+#bottomPaneMain{
+    -fx-background-color: #4f9556
+}
 
 

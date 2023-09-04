@@ -16,7 +16,12 @@
       </Label>
       <TextField fx:id="loginTxtEmail" alignment="CENTER" layoutX="50.0" layoutY="262.0" prefHeight="45.0" prefWidth="253.0" promptText="Digite o e-mail" />
       <PasswordField fx:id="loginPasswordTxt" alignment="CENTER" layoutX="50.0" layoutY="335.0" prefHeight="45.0" prefWidth="253.0" promptText="Digite a senha" />
-      <Button fx:id="loginBtn" layoutX="51.0" layoutY="423.0" mnemonicParsing="false" onAction="#onLoginBtnAction" prefHeight="45.0" prefWidth="253.0" text="Registrar" textFill="#e4e8d9">
+      <Button fx:id="loginBtn" layoutX="51.0" layoutY="423.0" mnemonicParsing="false" onAction="#onLoginBtnAction" prefHeight="45.0" prefWidth="253.0" text="Entrar" textFill="#e4e8d9">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
+      <Button fx:id="loginRegisterBtn" layoutX="50.0" layoutY="477.0" mnemonicParsing="false" onAction="#onLoginRegisterBtnAction" prefHeight="45.0" prefWidth="253.0" textFill="#e4e8d9">
          <font>
             <Font size="19.0" />
          </font>
