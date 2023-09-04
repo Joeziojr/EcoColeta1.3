@@ -47,9 +47,6 @@ public class LoginViewController{
     private Button loginRegisterBtn;
     
     
-    /**
-     * Initializes the controller class.
-     */
      private UsuarioDAO userDao = new UsuarioDAO();
      
      public void onLoginBtnAction() throws IOException {

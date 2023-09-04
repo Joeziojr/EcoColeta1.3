@@ -9,15 +9,41 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to ed
 #registerBtn{
     -fx-background-color: #4f9556
 }
+
+
 #loginBtn{
     -fx-background-color: #4f9556
+}
+#LoginViewMainPane{
+    -fx-background-color: #DBEFDC
 }
 #loginRegisterBtn{
     -fx-background-color: #4f9556
 }
 
+
+/*Style Main*/
 #bottomPaneMain{
-    -fx-background-color: #4f9556
+    -fx-background-color: #B6B6B6
 }
+#topPaneMainView{
+    -fx-background-color: #71BE78
+}
+
+.button{
+    -fx-background-color: #669A6B
+}
+
+#homeButtonMain{
+    -fx-background-color: #736F6F
+}
+#mapButtonMain{
+    -fx-background-color: #736F6F
+}
+#configButtonMain{
+    -fx-background-color: #736F6F
+}
+
+
 
 
