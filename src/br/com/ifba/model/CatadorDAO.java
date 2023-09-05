@@ -74,8 +74,8 @@ public class CatadorDAO {
     }
     
     //Responsável por acessar dados como a localização e o tipo de descartes
-    public Catador selecionarCatador(int localizacao, String tipoDescartes) {
-        String sql = "SELECT * FROM catador WHERE localizacao = ? AND tipoDescartes = ?";
+    public Catador selecionarCatador(/*int localizacao, */String tipoDescartes) {
+        String sql = "SELECT * FROM catador WHERE tipoDescartes = ?";
         Catador catador = new Catador();
 
         PreparedStatement pst;
@@ -84,8 +84,8 @@ public class CatadorDAO {
         try {
             pst = Conexao.getConexao().prepareStatement(sql);
 
-            pst.setInt(1, localizacao);
-            pst.setString(2, tipoDescartes);
+            //pst.setInt(1, localizacao);
+            pst.setString(1, tipoDescartes);
             rs = pst.executeQuery();
 
             if (rs.next()) {

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.CheckBox?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
@@ -9,7 +10,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane id="AnchorPane" prefHeight="563.0" prefWidth="351.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.ifba.controller.MainViewController">
+<AnchorPane id="AnchorPane" prefHeight="563.0" prefWidth="351.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.ifba.controller.SelectMaterialsController">
    <children>
       <Pane layoutY="507.0">
          <children>
@@ -25,44 +26,45 @@
             </ImageView>
          </children>
       </Pane>
-      <Pane fx:id="topPaneMainView" prefHeight="217.0" prefWidth="351.0" stylesheets="@../styleSheets/style.css">
+      <Pane fx:id="topPaneMainView" prefHeight="230.0" prefWidth="351.0" stylesheets="@../styleSheets/style.css">
          <children>
             <Text id="textButtonMapScreen" layoutX="58.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="TituloTipo3" text="Selecione o Tipo de Material:">
                <font>
                   <Font name="Liberation Sans Bold" size="17.0" />
                </font>
             </Text>
-            <CheckBox fx:id="plasticoCheckBox" layoutX="22.0" layoutY="63.0" mnemonicParsing="false" styleClass="checkBoxes" stylesheets="@../styleSheets/style.css" text="Plastico">
+            <CheckBox fx:id="plasticoCheckBox" layoutX="22.0" layoutY="63.0" mnemonicParsing="false" onAction="#onSelectMaterialsBtnAction" styleClass="checkBoxes" stylesheets="@../styleSheets/style.css" text="Plastico">
                <font>
                   <Font name="Liberation Sans" size="14.0" />
                </font>
             </CheckBox>
-            <CheckBox fx:id="vidroCheckBox" layoutX="125.0" layoutY="63.0" mnemonicParsing="false" styleClass="checkBoxes" stylesheets="@../styleSheets/style.css" text="Vidro">
+            <CheckBox fx:id="vidroCheckBox" layoutX="125.0" layoutY="63.0" mnemonicParsing="false" onAction="#onSelectMaterialsBtnAction" styleClass="checkBoxes" stylesheets="@../styleSheets/style.css" text="Vidro">
                <font>
                   <Font name="Liberation Sans" size="14.0" />
                </font>
             </CheckBox>
-            <CheckBox fx:id="papelCheckBox" layoutX="22.0" layoutY="100.0" mnemonicParsing="false" styleClass="checkBoxes" stylesheets="@../styleSheets/style.css" text="Papel">
+            <CheckBox fx:id="papelCheckBox" layoutX="22.0" layoutY="100.0" mnemonicParsing="false" onAction="#onSelectMaterialsBtnAction" styleClass="checkBoxes" stylesheets="@../styleSheets/style.css" text="Papel">
                <font>
                   <Font name="Liberation Sans" size="14.0" />
                </font>
             </CheckBox>
-            <CheckBox fx:id="metalCheckBox" layoutX="125.0" layoutY="100.0" mnemonicParsing="false" styleClass="checkBoxes" stylesheets="@../styleSheets/style.css" text="Metal">
+            <CheckBox fx:id="metalCheckBox" layoutX="125.0" layoutY="100.0" mnemonicParsing="false" onAction="#onSelectMaterialsBtnAction" styleClass="checkBoxes" stylesheets="@../styleSheets/style.css" text="Metal">
                <font>
                   <Font name="Liberation Sans" size="14.0" />
                </font>
             </CheckBox>
-            <CheckBox fx:id="MadeiraCheckBox" layoutX="242.0" layoutY="63.0" mnemonicParsing="false" styleClass="checkBoxes" stylesheets="@../styleSheets/style.css" text="Madeira">
+            <CheckBox fx:id="MadeiraCheckBox" layoutX="242.0" layoutY="63.0" mnemonicParsing="false" onAction="#onSelectMaterialsBtnAction" styleClass="checkBoxes" stylesheets="@../styleSheets/style.css" text="Madeira">
                <font>
                   <Font name="Liberation Sans" size="14.0" />
                </font>
             </CheckBox>
-            <TextField fx:id="outroMaterialTextField" layoutX="70.0" layoutY="159.0" />
-            <Text layoutX="22.0" layoutY="176.0" strokeType="OUTSIDE" strokeWidth="0.0" text="outro:">
+            <TextField fx:id="outroMaterialTextField" layoutX="69.0" layoutY="151.0" />
+            <Text layoutX="25.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="outro:">
                <font>
                   <Font name="Liberation Sans" size="14.0" />
                </font>
             </Text>
+            <Button fx:id="SelectMaterialsBtn" layoutX="25.0" layoutY="194.0" mnemonicParsing="false" onAction="#onSelectMaterialsBtnAction" prefHeight="24.0" prefWidth="301.0" text="Enviar solicitação" />
          </children>
       </Pane>
       <Pane layoutY="217.0" prefHeight="301.0" prefWidth="351.0">

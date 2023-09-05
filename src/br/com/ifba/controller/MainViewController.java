@@ -13,6 +13,8 @@ import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.CheckBox;
+import javafx.scene.control.TextField;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
@@ -22,24 +24,26 @@ import javafx.stage.Stage;
  * @author joeziojr
  */
 public class MainViewController{
-
-    @FXML
-    private Pane bottomPaneMain;
-    @FXML
-    private Button homeButtonMain;
-    @FXML
-    private Button MapButtonMain;
-    @FXML
-    private Button ConfigButtonMain;
     @FXML
     private Pane topPaneMainView;
     @FXML
-    private Button novaColetaMain;
+    private CheckBox plasticoCheckBox;
+    @FXML
+    private CheckBox vidroCheckBox;
+    @FXML
+    private CheckBox papelCheckBox;
+    @FXML
+    private CheckBox metalCheckBox;
+    @FXML
+    private CheckBox MadeiraCheckBox;
+    @FXML
+    private TextField outroMaterialTextField;
+    @FXML
+    private Button SelectMaterialsBtn;
 
     /**
      * Initializes the controller class.
      */
-    @FXML
     public void onDescarteBtnAction() throws IOException {
         
         Stage stage = new Stage();
