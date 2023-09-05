@@ -1,5 +1,9 @@
 package br.com.ifba.main;
 
+import br.com.ifba.model.Catador;
+import br.com.ifba.model.CatadorDAO;
+import br.com.ifba.model.Descarte;
+import br.com.ifba.model.DescarteDAO;
 import java.io.IOException;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;

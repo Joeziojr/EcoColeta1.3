@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="563.0" prefWidth="351.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.ifba.controller.MainViewController">
+   <children>
+      <Pane layoutY="507.0">
+         <children>
+            <ImageView fitHeight="81.0" fitWidth="351.0" layoutY="10.0">
+               <image>
+                  <Image url="@../images/navigationBar.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="30.0" fitWidth="21.0" layoutX="168.0" layoutY="31.0">
+               <image>
+                  <Image url="@../images/barMapSelected.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane fx:id="topPaneMainView" prefHeight="217.0" prefWidth="351.0" stylesheets="@../styleSheets/style.css">
+         <children>
+            <Text id="textButtonMapScreen" layoutX="58.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="TituloTipo3" text="Selecione o Tipo de Material:">
+               <font>
+                  <Font name="Liberation Sans Bold" size="17.0" />
+               </font>
+            </Text>
+            <CheckBox fx:id="plasticoCheckBox" layoutX="22.0" layoutY="63.0" mnemonicParsing="false" styleClass="checkBoxes" stylesheets="@../styleSheets/style.css" text="Plastico">
+               <font>
+                  <Font name="Liberation Sans" size="14.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="vidroCheckBox" layoutX="125.0" layoutY="63.0" mnemonicParsing="false" styleClass="checkBoxes" stylesheets="@../styleSheets/style.css" text="Vidro">
+               <font>
+                  <Font name="Liberation Sans" size="14.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="papelCheckBox" layoutX="22.0" layoutY="100.0" mnemonicParsing="false" styleClass="checkBoxes" stylesheets="@../styleSheets/style.css" text="Papel">
+               <font>
+                  <Font name="Liberation Sans" size="14.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="metalCheckBox" layoutX="125.0" layoutY="100.0" mnemonicParsing="false" styleClass="checkBoxes" stylesheets="@../styleSheets/style.css" text="Metal">
+               <font>
+                  <Font name="Liberation Sans" size="14.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="MadeiraCheckBox" layoutX="242.0" layoutY="63.0" mnemonicParsing="false" styleClass="checkBoxes" stylesheets="@../styleSheets/style.css" text="Madeira">
+               <font>
+                  <Font name="Liberation Sans" size="14.0" />
+               </font>
+            </CheckBox>
+            <TextField fx:id="outroMaterialTextField" layoutX="70.0" layoutY="159.0" />
+            <Text layoutX="22.0" layoutY="176.0" strokeType="OUTSIDE" strokeWidth="0.0" text="outro:">
+               <font>
+                  <Font name="Liberation Sans" size="14.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Pane layoutY="217.0" prefHeight="301.0" prefWidth="351.0">
+         <children>
+            <ImageView fitHeight="71.0" fitWidth="52.0" layoutX="54.0" layoutY="53.0">
+               <image>
+                  <Image url="@../images/coletaMapVermelho.png" />
+               </image>
+            </ImageView>
+            <ImageView layoutX="292.0" layoutY="238.0">
+               <image>
+                  <Image url="@../images/buttonLugarAtual.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

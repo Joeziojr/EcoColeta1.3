@@ -9,6 +9,7 @@ public class Usuario{
     private String senha;
     private String nome;
     private int idade;
+    private int localizacao;
     private String telefone;
     
     
@@ -19,6 +20,14 @@ public class Usuario{
     public Usuario(String senha, String email) {
         this.senha = senha;
         this.email = email;
+    }
+
+    public int getLocalizacao() {
+        return localizacao;
+    }
+
+    public void setLocalizacao(int localizacao) {
+        this.localizacao = localizacao;
     }
 
     

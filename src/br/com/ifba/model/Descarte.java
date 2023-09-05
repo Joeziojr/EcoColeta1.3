@@ -10,14 +10,24 @@ package br.com.ifba.model;
  */
 public class Descarte {
     
-    //private int id; ?
+    private int id; 
     private String material;
     private String status;
     private float valor;
     private int quantidade;
     private int localizacao;
+    private String dono;
     //private "Blob" localizacao;
 
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    
     public String getMaterial() {
         return material;
     }
@@ -56,6 +66,14 @@ public class Descarte {
 
     public void setLocalizacao(int localizacao) {
         this.localizacao = localizacao;
+    }
+
+    public String getDono() {
+        return dono;
+    }
+
+    public void setDono(String dono) {
+        this.dono = dono;
     }
     
     

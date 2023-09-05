@@ -1,35 +1,84 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
-<?import javafx.scene.shape.Circle?>
-<?import javafx.scene.shape.Ellipse?>
 <?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="582.0" prefWidth="351.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/19" fx:controller="br.com.ifba.controller.MainViewController">
+<AnchorPane id="AnchorPane" prefHeight="563.0" prefWidth="351.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.ifba.controller.MainViewController">
    <children>
-      <Pane fx:id="bottomPaneMain" layoutY="523.0" prefHeight="59.0" prefWidth="351.0" stylesheets="@../styleSheets/style.css">
+      <Pane layoutY="507.0">
          <children>
-            <Button fx:id="mapButtonMain" layoutX="145.0" layoutY="8.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="62.0" text="Mapa" />
-            <Button fx:id="configButtonMain" layoutX="275.0" layoutY="8.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="62.0" text="Config" />
-            <Button fx:id="homeButtonMain" layoutX="14.0" layoutY="6.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="62.0" stylesheets="@../styleSheets/style.css" text="Home" />
+            <ImageView fitHeight="81.0" fitWidth="351.0" layoutY="10.0">
+               <image>
+                  <Image url="@../images/navigationBar.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="30.0" fitWidth="21.0" layoutX="168.0" layoutY="31.0">
+               <image>
+                  <Image url="@../images/barMapSelected.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="30.0" fitWidth="38.0" layoutX="59.0" layoutY="31.0">
+               <image>
+                  <Image url="@../images/barHomeUnselected.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="30.0" fitWidth="27.0" layoutX="263.0" layoutY="31.0">
+               <image>
+                  <Image url="@../images/barConfigUnselected.png" />
+               </image>
+            </ImageView>
          </children>
       </Pane>
-      <Pane fx:id="topPaneMainView" prefHeight="97.0" prefWidth="351.0" stylesheets="@../styleSheets/style.css">
+      <Pane fx:id="topPaneMainView" prefHeight="110.0" prefWidth="351.0" stylesheets="@../styleSheets/style.css">
          <children>
-            <Button fx:id="historicoButtonMain" layoutX="102.0" layoutY="22.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="62.0" text="Historico">
+            <Button fx:id="historicoButtonMain" layoutX="102.0" layoutY="22.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="62.0" stylesheets="@../styleSheets/style.css">
                <font>
                   <Font size="10.0" />
                </font>
             </Button>
-            <Button fx:id="button3TopMain" layoutX="193.0" layoutY="22.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="62.0" />
-            <Button fx:id="button4TopMain" layoutX="275.0" layoutY="22.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="62.0" />
-            <Button fx:id="novaColetaButtonMain" layoutX="14.0" layoutY="22.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="62.0" stylesheets="@../styleSheets/style.css" text="Novo" />
+            <Button fx:id="button3TopMain" layoutX="193.0" layoutY="22.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="62.0" stylesheets="@../styleSheets/style.css" />
+            <Button fx:id="button4TopMain" layoutX="275.0" layoutY="22.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="62.0" stylesheets="@../styleSheets/style.css" />
+            <Button fx:id="novaColetaButtonMain" layoutX="14.0" layoutY="22.0" mnemonicParsing="false" onAction="#onDescarteBtnAction" prefHeight="59.0" prefWidth="62.0" stylesheets="@../styleSheets/style.css" />
+            <ImageView disable="true" fitHeight="39.0" fitWidth="27.0" layoutX="32.0" layoutY="32.0">
+               <image>
+                  <Image url="@../images/buttonDescarteIcon.png" />
+               </image>
+            </ImageView>
+            <ImageView disable="true" fitHeight="45.0" fitWidth="38.0" layoutX="114.0" layoutY="29.0">
+               <image>
+                  <Image url="@../images/ButtonHistoricoIcon.png" />
+               </image>
+            </ImageView>
+            <Text id="textButtonMapScreen" fill="#38543a" layoutX="12.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0" text="descartar">
+               <font>
+                  <Font name="SansSerif Bold" size="12.0" />
+               </font>
+            </Text>
+            <Text id="textButtonMapScreen" fill="#38543a" layoutX="103.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0" text="historico">
+               <font>
+                  <Font name="SansSerif Bold" size="12.0" />
+               </font>
+            </Text>
          </children>
       </Pane>
-      <Circle fill="#b6b6b6" layoutX="316.0" layoutY="494.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" />
-      <Ellipse fill="#ee675c" layoutX="81.0" layoutY="331.0" radiusX="16.0" radiusY="33.0" stroke="BLACK" strokeType="INSIDE" />
+      <Pane layoutY="97.0" prefHeight="411.0" prefWidth="351.0">
+         <children>
+            <ImageView fitHeight="71.0" fitWidth="52.0" layoutX="56.0" layoutY="164.0">
+               <image>
+                  <Image url="@../images/coletaMapVermelho.png" />
+               </image>
+            </ImageView>
+            <ImageView layoutX="292.0" layoutY="352.0">
+               <image>
+                  <Image url="@../images/buttonLugarAtual.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
    </children>
 </AnchorPane>

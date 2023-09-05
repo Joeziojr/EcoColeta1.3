@@ -1,30 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="582.0" prefWidth="351.0" stylesheets="@../styleSheets/style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.ifba.controller.LoginViewController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="582.0" prefWidth="351.0" style="-fx-background-color: DAEEDC;" stylesheets="@../styleSheets/style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.ifba.controller.LoginViewController">
    <children>
-      <Label fx:id="loginLbl" layoutX="128.0" layoutY="143.0" prefHeight="40.0" prefWidth="95.0" text="Icone" textFill="#4f9556">
-         <font>
-            <Font name="SansSerif Regular" size="32.0" />
-         </font>
-      </Label>
-      <TextField fx:id="loginTxtEmail" alignment="CENTER" layoutX="50.0" layoutY="262.0" prefHeight="45.0" prefWidth="253.0" promptText="Digite o e-mail" />
-      <PasswordField fx:id="loginPasswordTxt" alignment="CENTER" layoutX="50.0" layoutY="335.0" prefHeight="45.0" prefWidth="253.0" promptText="Digite a senha" />
-      <Button fx:id="loginBtn" layoutX="51.0" layoutY="423.0" mnemonicParsing="false" onAction="#onLoginBtnAction" prefHeight="45.0" prefWidth="253.0" text="Entrar" textFill="#e4e8d9">
+      <TextField id="textFieldLogin" fx:id="loginTxtEmail" alignment="CENTER" layoutX="50.0" layoutY="262.0" prefHeight="45.0" prefWidth="253.0" promptText="Digite o e-mail" stylesheets="@../styleSheets/style.css" />
+      <PasswordField id="textFieldLogin" fx:id="loginPasswordTxt" alignment="CENTER" layoutX="50.0" layoutY="323.0" prefHeight="45.0" prefWidth="253.0" promptText="Digite a senha" stylesheets="@../styleSheets/style.css" />
+      <Button id="ButtonLogin" fx:id="loginBtn" layoutX="49.0" layoutY="425.0" mnemonicParsing="false" onAction="#onLoginBtnAction" prefHeight="45.0" prefWidth="253.0" text="Entrar" textFill="#e4e8d9">
          <font>
             <Font size="19.0" />
          </font>
       </Button>
-      <Button fx:id="loginRegisterBtn" layoutX="49.0" layoutY="476.0" mnemonicParsing="false" onAction="#onLoginRegisterBtnAction" prefHeight="45.0" prefWidth="253.0" text="Cadastrar" textFill="#e4e8d9">
+      <Button id="ButtonLogin" fx:id="loginRegisterBtn" layoutX="49.0" layoutY="476.0" mnemonicParsing="false" onAction="#onLoginRegisterBtnAction" prefHeight="45.0" prefWidth="253.0" text="Cadastrar" textFill="#e4e8d9">
          <font>
             <Font size="19.0" />
          </font>
       </Button>
+      <ImageView fitHeight="88.0" fitWidth="83.0" layoutX="134.0" layoutY="99.0">
+         <image>
+            <Image url="@../images/LOGOECOCOLETA.png" />
+         </image>
+      </ImageView>
    </children>
 </Pane>

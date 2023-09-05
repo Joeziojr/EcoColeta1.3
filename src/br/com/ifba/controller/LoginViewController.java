@@ -63,7 +63,7 @@ public class LoginViewController{
         scene.getStylesheets().add(css);
         
         stage.setScene(scene);
-        stage.setTitle("Registro");
+        stage.setTitle("main");
         stage.centerOnScreen();
         stage.show();
      }
@@ -76,7 +76,6 @@ public class LoginViewController{
             Usuario us = userDao.pesquisarUser(loginTxtEmail.getText(),
                     loginTxtEmail.getText(), loginPasswordTxt.getText());
             if (us.getId() > 0) {
-                JOptionPane.showMessageDialog(null, "Fez o login");
                // return true;
                
                Stage stage = new Stage();
