@@ -33,27 +33,27 @@
                   <Font name="Liberation Sans Bold" size="17.0" />
                </font>
             </Text>
-            <CheckBox fx:id="plasticoCheckBox" layoutX="22.0" layoutY="63.0" mnemonicParsing="false" onAction="#onSelectMaterialsBtnAction" styleClass="checkBoxes" stylesheets="@../styleSheets/style.css" text="Plastico">
+            <CheckBox fx:id="plasticoCheckBox" layoutX="22.0" layoutY="63.0" mnemonicParsing="false" onAction="#onPlasticoCheckBoxAction" styleClass="checkBoxes" stylesheets="@../styleSheets/style.css" text="Plastico">
                <font>
                   <Font name="Liberation Sans" size="14.0" />
                </font>
             </CheckBox>
-            <CheckBox fx:id="vidroCheckBox" layoutX="125.0" layoutY="63.0" mnemonicParsing="false" onAction="#onSelectMaterialsBtnAction" styleClass="checkBoxes" stylesheets="@../styleSheets/style.css" text="Vidro">
+            <CheckBox fx:id="vidroCheckBox" layoutX="125.0" layoutY="63.0" mnemonicParsing="false" onAction="#onVidroCheckBoxAction" styleClass="checkBoxes" stylesheets="@../styleSheets/style.css" text="Vidro">
                <font>
                   <Font name="Liberation Sans" size="14.0" />
                </font>
             </CheckBox>
-            <CheckBox fx:id="papelCheckBox" layoutX="22.0" layoutY="100.0" mnemonicParsing="false" onAction="#onSelectMaterialsBtnAction" styleClass="checkBoxes" stylesheets="@../styleSheets/style.css" text="Papel">
+            <CheckBox fx:id="papelCheckBox" layoutX="22.0" layoutY="100.0" mnemonicParsing="false" onAction="#onPapelCheckBoxAction" styleClass="checkBoxes" stylesheets="@../styleSheets/style.css" text="Papel">
                <font>
                   <Font name="Liberation Sans" size="14.0" />
                </font>
             </CheckBox>
-            <CheckBox fx:id="metalCheckBox" layoutX="125.0" layoutY="100.0" mnemonicParsing="false" onAction="#onSelectMaterialsBtnAction" styleClass="checkBoxes" stylesheets="@../styleSheets/style.css" text="Metal">
+            <CheckBox fx:id="metalCheckBox" layoutX="125.0" layoutY="100.0" mnemonicParsing="false" onAction="#onMetalCheckBoxAction" styleClass="checkBoxes" stylesheets="@../styleSheets/style.css" text="Metal">
                <font>
                   <Font name="Liberation Sans" size="14.0" />
                </font>
             </CheckBox>
-            <CheckBox fx:id="MadeiraCheckBox" layoutX="242.0" layoutY="63.0" mnemonicParsing="false" onAction="#onSelectMaterialsBtnAction" styleClass="checkBoxes" stylesheets="@../styleSheets/style.css" text="Madeira">
+            <CheckBox fx:id="MadeiraCheckBox" layoutX="242.0" layoutY="63.0" mnemonicParsing="false" onAction="#onMadeiraCheckBoxAction" styleClass="checkBoxes" stylesheets="@../styleSheets/style.css" text="Madeira">
                <font>
                   <Font name="Liberation Sans" size="14.0" />
                </font>

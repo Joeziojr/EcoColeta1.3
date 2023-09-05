@@ -94,6 +94,7 @@ public class CatadorDAO {
                 catador.setNome(rs.getString("nome"));
                 catador.setLocalizacao(rs.getInt("localizacao"));
                 catador.setTipoDescartes(rs.getString("tipoDescartes"));
+                catador.setIdade(rs.getInt("idade"));
                 catador.setId(rs.getInt("id"));
             }
 
